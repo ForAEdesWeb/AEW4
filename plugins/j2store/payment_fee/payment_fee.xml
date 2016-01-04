@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" method="upgrade" group="j2store">
+	<name>plg_j2store_payment_fee</name>
+	<version>1.0</version>
+	<author>Lewis Jang</author>
+	<authorEmail>lewis.aedes@gmail.com</authorEmail>
+	<license>GNU General Public License v2</license>
+	<description>J2STORE_CASH_PLUGINDESC</description>
+
+	<files>
+		<filename plugin="payment_fee">payment_fee.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>

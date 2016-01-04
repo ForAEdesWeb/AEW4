@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+  <name>Pay2go_MPG</name>
+  <author>Pay2go</author>
+  <creationDate>Oct 2014</creationDate>
+  <copyright>COPYRIGHT 2014 © PAY2GO TECHNOLOGY CORPORATION</copyright>
+  <authorEmail>service@pay2go.com</authorEmail>
+  <authorUrl>https://www.pay2go.com</authorUrl>
+  <version>1.0</version>
+  <license>https://www.pay2go.com</license>
+  <description>智付寶第三方支付金流模組</description>
+  
+  <installfile>install.php</installfile>
+  <uninstallfile>uninstall.php</uninstallfile>
+  
+  <files folder="components/com_pay2go_mpg">
+    <filename>pay2go_mpg.php</filename>
+    <filename>index.html</filename>   
+  </files>
+  <administration></administration>
+  <plugins>
+	<plugin plugin="payment_Pay2go_MPG" group="j2store" />
+  </plugins>   
+     
+</extension>

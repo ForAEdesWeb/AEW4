@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" method="upgrade" group="j2store">
+  <name>智付寶線上金流[信用卡/WebAtm/ATM/超商代碼/超商條碼</name>
+  <author>Pay2go</author>
+  <creationDate>Oct 2014</creationDate>
+  <copyright>COPYRIGHT 2014 © PAY2GO TECHNOLOGY CORPORATION</copyright>
+  <authorEmail>service@pay2go.com</authorEmail>
+  <authorUrl>https://www.pay2go.com</authorUrl>
+  <version>1.0</version>
+  <license>https://www.pay2go.com</license>
+  <description>智付寶第三方支付金流模組</description>
+	
+	<files>
+		<filename plugin="payment_Pay2go_MPG">payment_Pay2go_MPG.php</filename>
+		<filename>index.html</filename>
+		<folder>payment_Pay2go_MPG</folder>	
+	</files>	
+	
+<config>
+	<fields name="params">
+  	  <fieldset name="basic">
+		<field name="Pay2go_shop" type="radio" default="1" label="啟用智付寶金流模組" description="是否啟用智付寶金流模組">
+		  <option value="0">J2STORE_NO</option>
+		  <option value="1">J2STORE_YES</option>
+		</field>
+		<field name="MerchantID" type="text" default="" label="智付寶商店代號" description="請輸入智付寶商店代號" size="10" />
+		<field name="hashkey" type="text" default="" label="智付寶商店Hashkey" description="請輸入智付寶商店Hashkey" size="20" />
+		<field name="hashiv" type="text" default="" label="智付寶商店Hashiv" description="請輸入智付寶商店Hashiv" size="20" />
+		<field name="Order_Desc" type="text" default="" label="繳費單說明文字" description="請輸入繳費單說明文字，例：網購商品一批" size="20" />
+		<field name="ExpireDate" type="text" size="10" default="3" label="預設繳費期限天數" description="請輸入有效繳費期限天數"/>
+	</fieldset>
+  </fields>	
+</config>			
+</extension>
